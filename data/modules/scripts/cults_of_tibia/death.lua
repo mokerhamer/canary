@@ -1,6 +1,6 @@
 function onRecvbyte(player, msg, byte)
 	if player then
-		local storageDeathFake = player:getStorageValue(Storage.CultsOfTibia.Barkless.Death)
+		local storageDeathFake = player:getStorageValue(Storage.Barkless.Death)
 		if storageDeathFake == 1 then
 			player:setStorageValue(Storage.CultsOfTibia.Barkless.Death, 0)
 			player:addHealth(player:getMaxHealth())
